@@ -13,7 +13,7 @@ class Triangle
       begin
         raise TriangleError
       end
-    elsif (@side_1 + @side_2) < @side_3
+    elsif (@side_1 + @side_2) < @side_3 || (@side_2 + @side_3) < @side_1
       begin
         raise TriangleError
       end

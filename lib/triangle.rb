@@ -16,6 +16,8 @@ class Triangle
       return :equilateral
     elsif @side1 == @side2 || @side1 == @side_3 || @side2 == @side1 || @side2 == @side_3
       return :isosceles
+    elsif @side1 != @side2 || @side1 != @side_3 || @side2 != @side1 || @side2 != @side_3
+      return :scalene
     end
   end
 
